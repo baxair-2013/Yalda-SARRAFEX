@@ -101,17 +101,7 @@ const CyberWatermelon: React.FC = () => {
              }} 
         />
         <div className="absolute top-4 left-4 right-4 bottom-4 rounded-b-full bg-gradient-to-b from-red-500/80 to-red-900/80 backdrop-blur-sm border-t border-white/10 flex justify-center items-end pb-4">
-           <div className="flex gap-4">
-             {[1, 2, 3, 4].map((i) => (
-               <motion.div 
-                key={i}
-                animate={{ opacity: [0.4, 1, 0.4] }}
-                transition={{ duration: 2, delay: i * 0.5, repeat: Infinity }}
-               >
-                 <TrendingUp size={16} className="text-black fill-black" />
-               </motion.div>
-             ))}
-           </div>
+           {/* Chart Arrows Removed */}
         </div>
       </div>
     </motion.div>
