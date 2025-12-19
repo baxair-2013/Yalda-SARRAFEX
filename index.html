@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sarrafex Yalda Campaign</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <style>
+      /* 100 – Hairline */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-HairLine.eot');
+        src: url('fonts/eot/RokhFaNum-HairLine.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-HairLine.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-HairLine.woff') format('woff');
+        font-weight: 100;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* 200 – ExtraLight */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-ExtraLight.eot');
+        src: url('fonts/eot/RokhFaNum-ExtraLight.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-ExtraLight.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-ExtraLight.woff') format('woff');
+        font-weight: 200;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* 300 – Light */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-Light.eot');
+        src: url('fonts/eot/RokhFaNum-Light.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-Light.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-Light.woff') format('woff');
+        font-weight: 300;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* 400 – Regular */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-Regular.eot');
+        src: url('fonts/eot/RokhFaNum-Regular.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-Regular.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-Regular.woff') format('woff');
+        font-weight: 400;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* 500 – Medium */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-Medium.eot');
+        src: url('fonts/eot/RokhFaNum-Medium.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-Medium.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-Medium.woff') format('woff');
+        font-weight: 500;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* 600 – SemiBold */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-SemiBold.eot');
+        src: url('fonts/eot/RokhFaNum-SemiBold.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-SemiBold.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-SemiBold.woff') format('woff');
+        font-weight: 600;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* 700 – Bold */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-Bold.eot');
+        src: url('fonts/eot/RokhFaNum-Bold.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-Bold.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-Bold.woff') format('woff');
+        font-weight: 700;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* 800 – ExtraBold */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-ExtraBold.eot');
+        src: url('fonts/eot/RokhFaNum-ExtraBold.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-ExtraBold.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-ExtraBold.woff') format('woff');
+        font-weight: 800;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      /* 900 – Black */
+      @font-face {
+        font-family: 'RokhFaNum';
+        src: url('fonts/eot/RokhFaNum-Black.eot');
+        src: url('fonts/eot/RokhFaNum-Black.eot?#iefix') format('embedded-opentype'),
+            url('fonts/woff2/RokhFaNum-Black.woff2') format('woff2'),
+            url('fonts/woff/RokhFaNum-Black.woff') format('woff');
+        font-weight: 900;
+        font-style: normal;
+        font-display: swap;
+      }
+
+      body {
+        font-family: 'RokhFaNum', 'Vazirmatn', sans-serif;
+        background-color: #050505;
+        color: white;
+        overflow-x: hidden;
+      }
+      /* Custom scrollbar for dark theme */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #333;
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.23.26"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>
